@@ -1,0 +1,228 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  color:#ecf0f1;
+}
+.form-control{
+  width: 400px;
+  border-radius: 0px;
+  margin-left: 25px;
+  background-color: rgba(240, 248, 255, 0);
+  border: 1px solid rgba(240, 248, 255, 0.267);
+}
+input[type=text]:active,input[type=text]:focus{
+  background-color: rgba(240, 248, 255, 0.267);
+  color: #ecf0f1;
+}
+.weatherBg{
+  
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading{
+  color: color;
+  font-weight: 100;
+  color:#ecf0f1d8;
+}
+.top{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: -50px;
+}
+.weatherResultBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ margin-top: -50px;
+ margin-left: 35%;
+ margin-right: 40%;
+  width: 450px;
+  height: 450px;
+  box-shadow: inset -1px -1px 11px white, inset 6px 6px 3px wheat;
+}
+.weatherIcon{
+  
+  width: 80px;
+  height: 80px;
+  margin-top: 0px;
+}
+.weathercity{
+  font-size: 18px;
+  color:#ecf0f1d8;
+  
+}
+.weathertemp{
+  font-size: 20px;
+  color: #ecf0f1d8;
+  margin-left: 5px;
+}
+.btn{
+  width: 50px;
+  color: #ecf0f1d8;
+}
+.country-weather{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+.weather-info{
+  margin-top: 25px;
+}
+.weather-info-heading{
+  margin-left: -308px;
+  color: #ecf0f1ad;
+  font-size: 15px;
+}
+.weather-info-details{
+  display: flex;
+  flex-direction: row;
+}
+.weather-info-details-sub{
+  display: flex;
+  flex-direction: row;
+  margin-left: -15px;
+  gap: 7px;
+  margin-top: 20px;
+}
+.fa-sunrise{
+  color: rgba(241, 175, 53, 0.753);
+  font-size: 30px;
+}
+.data-category{
+  display: flex;
+  flex-direction: column;
+}
+.data-category p{
+  font-size: 13px;
+}
+.sunrise{
+  margin-left: 7px;
+  margin-top: -20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #ecf0f1c0;
+}
+.weather-info-details-sub1{
+  display: flex;
+  flex-direction: row;
+  margin-left: 105px;
+  gap: 0px;
+  margin-top: 20px;
+}
+.fa-dewpoint{
+  color: rgba(0, 0, 0, 0.644);
+  font-size: 30px;
+}
+.humidity{
+  margin-left: 5px;
+  margin-top: -20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #ecf0f1c0;
+}
+.weather-info-details-sub2{
+  display: flex;
+  flex-direction: row;
+  margin-left: -15px;
+  gap: 7px;
+  margin-top: 20px;
+}
+.fa-wind{
+  color: rgb(12, 127, 180);
+  font-size: 30px;
+}
+.weather-info-details-sub3{
+  display: flex;
+  flex-direction: row;
+  margin-left: 145px;
+  gap: 0px;
+  margin-top: 20px;
+}
+.fa-temperature-high{
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.616);
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+  .form-control{
+    width: 305px;
+    border-radius: 0px;
+    margin-left: -65px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid rgba(240, 248, 255, 0.267);
+  }
+  input[type=text]:active,input[type=text]:focus{
+    background-color: rgba(240, 248, 255, 0.267);
+    color: #ecf0f1;
+  }
+  .weatherResultBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   margin-top: -50px;
+   margin-left: 35px;
+   width: 305px;
+    height: 400px;
+    box-shadow: inset -1px -1px 11px white, inset 6px 6px 3px wheat;
+  }
+  .weather-info-heading{
+    margin-left: -170px;
+    color: #ecf0f1ad;
+    font-size: 15px;
+  }
+  .weather-info-details-sub{
+    display: flex;
+    flex-direction: row;
+    margin-left: -2px;
+    gap: 7px;
+    margin-top: 20px;
+  }
+  .weather-info-details-sub1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    gap: 0px;
+    margin-top: 20px;
+  }
+  .weather-info-details-sub2{
+    display: flex;
+    flex-direction: row;
+    margin-left: -1px;
+    gap: 7px;
+    margin-top: 5px;
+  }
+  .weather-info-details-sub3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 90px;
+    gap: 0px;
+    margin-top: 5px;
+  }
+}
+
